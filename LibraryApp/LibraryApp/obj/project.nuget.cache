@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T9LbKQ1+vNzM0Tbd5xE6ynfUKeCmNqhTRWajzaZQDM8i+Z73CpXg5F3zFQNw+0BB5JmDyBpU8bCyWi+qH+pGCg==",
+  "dgSpecHash": "ZxjEFeanrkQ0I/Z5QgiaibJLO/wE5rh8KzPqE4i1+Dl3lsn8BwUqSir/wkeMFqTQq8Djujenns/TRC7aPFB9gQ==",
   "success": true,
-  "projectFilePath": "D:\\Exercise Files\\Ch03\\03_01\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
+  "projectFilePath": "D:\\CP\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elank\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\elank\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

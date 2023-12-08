@@ -3,8 +3,39 @@
 @{
     ViewData["Title"] = "Payment";
 }
-
-    <div class="card">
+<div class="row align-items-center center" style="width: 70%;padding-top:5%">
+    <div class="card" style="padding-bottom: 15px">
+        <div class="card-header text-center rounded">
+            <h2 class="display-6">PayBee Dashboard</h2>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive table-scroll no-scroll-bar"
+                 data-mdb-perfect-scrollbar="true"
+                 style="position: relative; height: 400px">
+                <table class="table table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th class="bg-secondary text-white" scope="col">Tipe</th>
+                            <th class="bg-secondary text-white" scope="col">Jumlah</th>
+                            <th class="bg-secondary text-white" scope="col">tanggal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var transaction in Model.Transactions)
+        {
+                        <tr>
+                                <td>@transaction.Type</td>
+                                <td>Rp @transaction.Amount</td>
+                                <td>@transaction.Created.ToLocalTime()</td>
+                        </tr>
+        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    @* <div class="card">
         <div class="card-header">
 
 <h2>Stripe overview</h2>
@@ -38,13 +69,13 @@
             <th scope="row">@transaction.Type</th>
             <td>@transaction.Status</td>
                 @* <td>$@string.Format("{0:#.00}", Convert.ToDecimal(@transaction.Amount)/100)</td> *@
-                        <td>Rp @transaction.Amount</td>
+                        @* <td>Rp @transaction.Amount</td>
                 <td>@transaction.Created.ToLocalTime()</td>
-            <td>@transaction.AvailableOn</td>
+            <td>@transaction.AvailableOn</td>@transaction.
          </tr>
-        }
-        
+        } *@
+ @*        
     </tbody>
 </table>
     </div>
-</div>
+</div> *@

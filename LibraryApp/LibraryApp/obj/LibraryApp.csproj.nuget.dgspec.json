@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Exercise Files\\Ch03\\03_01\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj": {}
+    "D:\\CP\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj": {}
   },
   "projects": {
-    "D:\\Exercise Files\\Ch03\\03_01\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj": {
+    "D:\\CP\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Exercise Files\\Ch03\\03_01\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
+        "projectUniqueName": "D:\\CP\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
         "projectName": "LibraryApp",
-        "projectPath": "D:\\Exercise Files\\Ch03\\03_01\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
+        "projectPath": "D:\\CP\\Begin\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
         "packagesPath": "C:\\Users\\elank\\.nuget\\packages\\",
-        "outputPath": "D:\\Exercise Files\\Ch03\\03_01\\Begin\\LibraryApp\\LibraryApp\\obj\\",
+        "outputPath": "D:\\CP\\Begin\\LibraryApp\\LibraryApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elank\\AppData\\Roaming\\NuGet\\NuGet.Config",
