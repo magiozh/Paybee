@@ -1,0 +1,63 @@
+﻿@model IEnumerable<LibraryApp.Data.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="card-group" style="padding-top:100px">
+    @foreach (var item in Model)
+    {
+        
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-bottom" src="~/images/@item.Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Title <small class="text-muted">(by: @item.Author) </small></h5>
+                    @Html.ActionLink("Lihat detail", "Details", "Books", new { id = item.Id })
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success qa float-right" data-bs-toggle="modal" data-bs-target="#exampleModal " data-id="@item.Id" style="margin-right:10px">
+                        Beli Rp @item.Price
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary text-center">
+                                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel" style="align-content:center">Isi data diri Anda</h1>
+                                    @* <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> *@
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=xF6513-aYEKy4-tT8KyEAaP2S4X3YTNAijVczo7W2ZBUNkZaMVBPRjVWVDZZS01HV1JQRjIyUjRYTyQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                                        @*<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=xF6513-aYEKy4-tT8KyEAdwc3u2Ku2FEr5NMb_jlLzpURTQ2VUZPN1RFQ0lMWFBUVlk2UkJRMlFDUi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>*@
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    
+                                    
+                                    @Html.ActionLink("Lanjutkan", "Purchase", "Checkout", new { id = item.Id }, new { @class = "btn btn-primary pull-right" })
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<script type="text/javascript">
+    $(document).on("click", ".qa", function () {
+        var id = $(this).data('id'); // Ambil nilai dari atribut data-id
+        var url = '/Checkout/Purchase/' + id; // Membuat route
+        // Memuat modal dengan konten dari URL
+        $.get(url, function (data) {
+            $('#exampleModal .modal-footer .btn-primary').attr('href', '/Checkout/Purchase/' + id); // Mereplace route
+            $('#exampleModal').modal('show');
+        });
+    });
+</script>
+

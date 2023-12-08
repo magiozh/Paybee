@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\LibraryApp",
+    "\\LibraryApp\\Controllers",
+    "\\LibraryApp\\Views",
+    "\\LibraryApp\\Views\\Checkout",
+    "\\LibraryApp\\Views\\Shared",
+    "\\LibraryApp\\Views\\StripeDashboard",
+    "\\LibraryApp\\wwwroot",
+    "\\LibraryApp\\wwwroot\\css",
+    "\\LibraryApp\\wwwroot\\images"
+  ],
+  "SelectedNode": "\\LibraryApp\\Views\\StripeDashboard\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

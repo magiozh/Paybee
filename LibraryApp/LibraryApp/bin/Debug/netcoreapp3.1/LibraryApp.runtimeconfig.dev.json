@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\elank\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\elank\\.nuget\\packages"
+    ]
+  }
+}
